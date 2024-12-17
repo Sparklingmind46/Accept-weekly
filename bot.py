@@ -116,7 +116,7 @@ def set_webhook():
 if __name__ == "__main__":
     # Uncomment the line below to set the webhook during deployment
     # unset_webhook()
-     set_webhook()
+    set_webhook()
 
     # Start Flask server
     app.run(host="0.0.0.0", port=5000)
