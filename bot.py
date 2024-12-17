@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-API_KEY = os.getenv('API_KEY')
-WEBHOOK_URL = os.getenv('WEBHOOK_URL')
+API_KEY = os.getenv('BOT_TOKEN')
+WEBHOOK_URL = os.getenv('URL')
 
 # Validate environment variables
 if not API_KEY:
@@ -116,7 +116,7 @@ def set_webhook():
 if __name__ == "__main__":
     # Uncomment the line below to set the webhook during deployment
     # unset_webhook()
-    # set_webhook()
+     set_webhook()
 
     # Start Flask server
     app.run(host="0.0.0.0", port=5000)
